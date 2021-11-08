@@ -17,8 +17,6 @@ interface SdkComponent {
     @Component.Builder
     interface Builder {
         fun context(@BindsInstance context: Context): Builder
-        fun networkModuleDependencies(userModule: UserModule): Builder
-        fun networkModuleDependencies(networkModule: NetworkModule): Builder
         fun build(): SdkComponent
     }
 
